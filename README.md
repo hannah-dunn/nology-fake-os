@@ -6,7 +6,7 @@
 ## Overview
 
 The goal of this project is to have students explore and consolidate their understandings of HTML, CSS and JavaScript.
-This project will require you to replicate the layout and format of a design/image using CSS, add content via HTML and control the interactive elements via JavaScript.\
+This project will require you to replicate the layout and format of a design/image using CSS, add content via HTML and control the interactive elements via JavaScript.
 
 ### The design is going to be that of an operating system.
 

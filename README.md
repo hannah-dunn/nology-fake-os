@@ -1,17 +1,15 @@
 # FakeOS Project
 
-## this is here temporarily probably
+Here is a recreation of a Windows 98 desktop.
+Internet Explorer - image of / playing youtube video
+My Little Pony: Friendship Gardens - slideshow modal of images
+Notepad - textarea
+Recycle Bin - discarded icons
 
-## Overview
+## Full Overview
 
 The goal of this project is to have students explore and consolidate their understandings of HTML, CSS and JavaScript.
 This project will require you to replicate the layout and format of a design/image using CSS, add content via HTML and control the interactive elements via JavaScript.
-
-### The design is going to be that of an operating system.
-
-Please look at the provided image gallery for examples.
-You should choose either a portrait (mobile) or landscape (desktop) operating system, you are not expected to create a responsive page that works on both, however it should look good on the chosen orientation at different resolutions/ratios.
-You will select one of the provided images, or your own as approved by a coach.
 
 ### Features
 
@@ -50,19 +48,3 @@ You will select one of the provided images, or your own as approved by a coach.
 - Push all changes to your develop branch
 - When submitting create a pull request from develop into main for review
 - Add coach as a reviewer
-
-## Hints
-
-- Split your js logic/data modules from your js DOM modules
-- Look at the position css property, specifically _fixed_ and _absolute_
-- May need to investigate Z index
-- Pay attention to your hierarchy of elements in your html
-- Create your modals using JS and DOM interaction
-- Make your life easy! You don't need to recreate everything, just do the features and mvp mentioned above
-
-### Useful Resources:
-
-- [Cutting a Monster Project Down to a Manageable Size](https://www.informit.com/articles/article.aspx?p=2153472)
-
-- [Is Your Code DRY or WET?](https://dzone.com/articles/is-your-code-dry-or-wet#:~:text=DRY%20code%20is%20a%20software,t%20adhere%20to%20DRY%20principle.)
-- [What are Pure Functions and Side Effects in JavaScript?](https://blog.greenroots.info/what-are-pure-functions-and-side-effects-in-javascript)

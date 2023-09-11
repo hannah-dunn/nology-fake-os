@@ -10,42 +10,45 @@
   </head>
   <body class="body">
     <div id="desktop">
+      <!--  -->
       <!-- internet explorer -->
-
       <label for="windows-ie-input" class="desktop-item btn-open">
         <div class="icon">
           <img src="./assets/internet.png" alt="" />
         </div>
         <div class="text">Internet Explorer</div>
       </label>
-
       <section class="modal hidden">
-        <div class="flex">
-          <button class="btn-close">⨉</button>
+        <div id="" class="flex">
+          <div class="header">
+            <button class="btn-close close">⨉</button>
+          </div>
+          <div><h2>dummy text</h2></div>
         </div>
-        <div><h2>dummy text</h2></div>
       </section>
 
-      <!-- <div id="modalContainer">
-      <div id="modal">
-        <p>This is the Modal</p>
-      </div>
-      <button id="trigger" data-is-open="false">open</button>
-    </div>
+      <!-- inside the icons -- internet -->
+      <!-- <div id="all-windows">
+        <div class="window ie windows-box-shadow">
+          <div class="header">
+            <label for="windows-ie-input-on-top">FJOLT</label>
+            <div class="header-buttons">
+              <label
+                for="windows-ie-input-min"
+                class="minimize windows-box-shadow"
+              ></label>
+              <label
+                for="windows-ie-input-max"
+                class="maximize windows-box-shadow"
+              ></label>
+              <label for="windows-ie-input" class="close windows-box-shadow"
+                >X</label
+              >
+            </div>
+          </div>
+        </div> -->
 
-    <label
-        for="windows-ie-input"
-        class="desktop-item btn-open"
-        id="trigger"
-        data-is-open="false"
-      >
-        <div class="icon">
-          <img src="./assets/internet.png" alt="" />
-        </div>
-        <div class="text">Internet Explorer</div>
-      </label> -->
-
-      <!-- documents -->
+      <!-- my little pony -->
       <label for="windows-documents-input" class="desktop-item">
         <div class="icon">
           <img src="./assets/pony icon.jpg" alt="" />
@@ -53,8 +56,43 @@
         <div class="text">My Little Pony: Friendship Gardens</div>
       </label>
 
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img
+            src="./assets/My_Little_Pony_Friendship_Gardens_Gameplay_Win-1.jpg"
+            style="width: 100%"
+          />
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img
+            src="./assets/My_Little_Pony_Friendship_Gardens_Gameplay_Win-10.jpg"
+            style="width: 100%"
+          />
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img
+            src="./assets/My_Little_Pony_Friendship_Gardens_Gameplay_Win-2.jpg"
+            style="width: 100%"
+          />
+          <div class="text">Caption Three</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
       <!-- notepad -->
-      <label for="windows-notepad-input" class="desktop-item">
+      <label for="windows-notepad-input" class="desktop-item btn-open">
         <div class="icon">
           <img
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAUVBMVEUAAACGhoYAgID4+Phm//+ZzMyZ///AwMAAAADM///x8fHM7P/q6upmzMymyvDM/8zd3d2Z/8zj4+MzmZnMzMxmzP9m/8wzzMwzzP/X19f///8yWdUJAAAAAXRSTlMAQObYZgAAAAFiS0dEGnVn5DIAAAAHdElNRQfiBhoALTAhTzgxAAABUklEQVQ4y5WT27aCMAxEJZByqYkFqR7//0fPpKUW0BeH4svsziQuvVx+UNOcz1HU0ukcEerYuf2hnobhEJA1TuPkPc5Vhr6pBLlst5MRo/de6RMwG5evsG8jAnZA9s22yze8jICwB8ZpKEL8rBawvAFyk7fZsmbdAvaArwHqsaUM97tIAVBQbjtdHApshb5dKpAGm+Hgg9WxTRDeAPybpma7i69RHaUGqYAf0axshzkHrG1JICtNT0ai2gpoqIBXh2iGLSodP2wFa8gVhKVSgOPIHYgYLaBvSwK5tJcKdyAk4qL5oQA2AaslR4ZpPpUG2QCNjzibm/yYAqwhJWCCjlmzkxih0rABSH5s2SLP+Ewr5AarIOYt2N4/eVrAmhu2Ic9KE4QKXIaT7rVBmv3PulnCC1rXF552l7ADlhDCy7D2GwDirP4I4N941tH/nPfsf9M/lngcOlIX3Z0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDYtMjZUMDA6NDU6NDgtMDQ6MDBhJQfuAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA2LTI2VDAwOjQ1OjQ4LTA0OjAwEHi/UgAAAABJRU5ErkJggg=="
@@ -63,6 +101,49 @@
         </div>
         <div class="text">Notepad</div>
       </label>
+      <!-- 
+      <section class="modal hidden">
+        <div id="windows-box-shadow modal ie" class="flex">
+          <div class="header">
+            <button class="btn-close close">⨉</button>
+          </div>
+          <div>
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </div>
+      </section> -->
+      <!-- modal work ^^ -->
+      <!-- <div class="window notepad windows-box-shadow">
+        <div class="header">
+          <label for="windows-notepad-input-on-top">Notepad</label>
+          <div class="header-buttons">
+            <label
+              for="windows-notepad-input-min"
+              class="minimize windows-box-shadow"
+            ></label>
+            <label
+              for="windows-notepad-input-max"
+              class="maximize windows-box-shadow"
+            ></label>
+            <label for="windows-notepad-input" class="close windows-box-shadow"
+              >X</label
+            >
+          </div>
+        </div>
+        <div class="options line">
+          <div class="item">File</div>
+          <div class="item">Edit</div>
+          <div class="item">Search</div>
+        </div>
+        <div class="content">
+          <textarea></textarea>
+        </div>
+      </div> -->
 
       <!-- recycle bin -->
       <label for="windows-trash-input" class="desktop-item">
@@ -76,45 +157,8 @@
       </label>
     </div>
 
-    <!-- inside the icons -->
-    <div id="all-windows">
-      <div class="window ie windows-box-shadow">
-        <div class="header">
-          <label for="windows-ie-input-on-top">FJOLT</label>
-          <div class="header-buttons">
-            <label
-              for="windows-ie-input-min"
-              class="minimize windows-box-shadow"
-            ></label>
-            <label
-              for="windows-ie-input-max"
-              class="maximize windows-box-shadow"
-            ></label>
-            <label for="windows-ie-input" class="close windows-box-shadow"
-              >X</label
-            >
-          </div>
-        </div>
-      </div>
-      <div class="window help windows-box-shadow">
-        <div class="header">
-          <label for="windows-help-input-on-top">Windows Help</label>
-          <div class="header-buttons">
-            <label
-              for="windows-help-input-min"
-              class="minimize windows-box-shadow"
-            ></label>
-            <label
-              for="windows-help-input-max"
-              class="maximize windows-box-shadow"
-            ></label>
-            <label for="windows-help-input" class="close windows-box-shadow"
-              >X</label
-            >
-          </div>
-        </div>
-      </div>
-      <div class="window trash windows-box-shadow">
+    <!-- inside the icons do literally nothing recycle bin -->
+    <!-- <div class="window trash windows-box-shadow">
         <div class="header">
           <label for="windows-trash-input-on-top">Recycle Bin</label>
           <div class="header-buttons">
@@ -169,93 +213,30 @@
           </label>
         </div>
       </div>
-      <div class="window documents windows-box-shadow">
-        <div class="header">
-          <label for="windows-documents-input-on-top">Documents</label>
-          <div class="header-buttons">
-            <label
-              for="windows-documents-input-min"
-              class="minimize windows-box-shadow"
-            ></label>
-            <label
-              for="windows-documents-input-max"
-              class="maximize windows-box-shadow"
-            ></label>
-            <label
-              for="windows-documents-input"
-              class="close windows-box-shadow"
-              >X</label
-            >
-          </div>
-        </div>
-        <div class="options line">
-          <div class="item">File</div>
-          <div class="item">Edit</div>
-          <div class="item">Views</div>
-          <div class="item">Go</div>
-          <div class="item">Favourites</div>
-          <div class="item">Help</div>
-        </div>
-        <div class="content white">
-          <input type="radio" name="documents-radio" id="secret-codes" />
-          <input type="radio" name="documents-radio" id="diary" />
-          <label class="file secret-codes" for="secret-codes">
-            <span class="image"
-              ><img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiBhoALTAhTzgxAAAAhUlEQVRIx+1TQQ6AIAwrxIfxtD2Nn9WDOCCKmXAQjT0MQrOmHQDsIGiuBfy2CAmxV9YiEJIgjVUIRpXwGIQK0FzDucCwg14seeuK43rIDkwsrwSOZMm0WJMDYwR7U4mX3MLcM2hEaKHzIf0OZnfwgb/wvIPhISbfwmBuCYgI2pmD30ugfSuWrXYCzH4wigAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yNlQwMDo0NTo0OC0wNDowMGElB+4AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjZUMDA6NDU6NDgtMDQ6MDAQeL9SAAAAAElFTkSuQmCC"
-                alt=""
-            /></span>
-            <span class="text">Secret_Codes.txt</span>
-          </label>
-          <label class="file diary" for="diary">
-            <span class="image"
-              ><img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGFBMVEUAAAAAAACAgID////AwMAAAL8AAP///wCsLlssAAAAAXRSTlMAQObYZgAAAAFiS0dEAxEMTPIAAAAHdElNRQfiBhoAOCQMIApYAAAAvUlEQVQoz22Ryw7CIBREqYl7xlb3Pj7APpQ1iaZbXcjaxBTXhCi/bx+2XBomd8PJDDcMjCUc43DWab8rpunIIi/TcbYyCkovKdltBpbPGVAtuHjJqz6GDvUOI1d9DiPqpcMt6tsEkXyjwy04NWEkhWooEMD6wUnEGuBOHidEBXACrKsNuuf/A7Wr3AekD2trB1JQe4MzUvqIK4BMeofIV0OFIzBpOYG+qmxoLNJ6DNCSow528I6s//4EXu3xB1FNX4O6vHKSAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA2LTI2VDAwOjU2OjM2LTA0OjAwEWYRaQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNi0yNlQwMDo1NjozNi0wNDowMGA7qdUAAAAASUVORK5CYII="
-                alt=""
-            /></span>
-            <span class="text">Diary.rtf</span>
-          </label>
-        </div>
-      </div>
-      <div class="window notepad windows-box-shadow">
-        <div class="header">
-          <label for="windows-notepad-input-on-top">Notepad</label>
-          <div class="header-buttons">
-            <label
-              for="windows-notepad-input-min"
-              class="minimize windows-box-shadow"
-            ></label>
-            <label
-              for="windows-notepad-input-max"
-              class="maximize windows-box-shadow"
-            ></label>
-            <label for="windows-notepad-input" class="close windows-box-shadow"
-              >X</label
-            >
-          </div>
-        </div>
-        <div class="options line">
-          <div class="item">File</div>
-          <div class="item">Edit</div>
-          <div class="item">Search</div>
-        </div>
-        <div class="content">
-          <textarea></textarea>
-        </div>
-      </div>
-    </div>
+      
+    </div> -->
   </body>
   <footer>
+    <!-- start button -->
     <div id="start-bar">
       <div id="start-button-items">
-        <label
-          id="start-button"
-          class="windows-box-shadow"
-          for="start-button-input"
-        >
-          <span> <img src="./assets/file38a4 - Copy.png" alt="" /></span
-        ></label>
-        <div id="items">
+        <div class="dropup">
+          <button
+            class="dropbtn"
+            style="background: transparent; border: none; color: transparent"
+          >
+            <label
+              id="start-button"
+              class="windows-box-shadow"
+              for="start-button-input"
+            >
+              <span> <img src="./assets/file38a4 - Copy.png" alt="" /></span
+            ></label>
+          </button>
+        </div>
+
+        <!-- in the dropup -->
+        <div id="items" class="dropup-content">
           <label
             for="windows-ie-input-min"
             class="ie-tab tab windows-box-shadow"
@@ -369,39 +350,15 @@
                   Help</label
                 >
               </li>
-              <li>
-                <label for="login-screen-input"
-                  ><img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAKlBMVEUAAACAgIAAAAD////AwMAAgAAA/wCAAAAAgID/AACAgAD//wAAAP8AAIBZpFh1AAAAAXRSTlMAQObYZgAAAAFiS0dEAxEMTPIAAAAHdElNRQfiBhgXEB4kEQA+AAABHklEQVQ4y92QMU7DMBSGU4/ZEldC6uS8tkKELuAshE6tGUjEUokbIA7QQ3AAhFR1QyZTvLWe8ETVsSyciIRWqtF7J+j/b/792e/9QXCCigR93pETOuAyEzQgaYRncZ9COjJ+nFEIvxo+3xFIM9L85QkwwuXZYjirMMLlxXJ+6QqEcHm+fE0s9HGwWYx+4i5BbGH3nUzxH+P7yW7DiammN9noCwNBV72NHwYYYJDIbYa3CHUUKardj8TkA6UUAq57bq0BAAGrnnE5bjy8XcWpW9d7vfuBTmLj5F75v4CBcQdZ4QcBM648+DhzmH1Caq1VyrbWHlHWpiyLOi1ae09VtpUGplt786Zlo/am+LNXYdXU4d88Is1iggoY0dNp6BfBfGAv3Vb5dgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yNFQyMzoxNjozMC0wNDowMBlr2tEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjRUMjM6MTY6MzAtMDQ6MDBoNmJtAAAAAElFTkSuQmCC"
-                    style="margin: 0 0.5rem 0 0"
-                    alt=""
-                  />
-                  Log Off
-                  <span class="spiderman logout-prompt"> Spiderman...</span
-                  ><span class="zark-muckerberg logout-prompt">
-                    Zark Muckerberg...</span
-                  ><span class="donald-trump logout-prompt">
-                    Donald Trump...</span
-                  ></label
-                >
-              </li>
-              <li>
-                <label for="shutdown-screen-input"
-                  ><img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAARVBMVEUAAACGhobAwMB3d3eysrLMzMz4+PjX19eZmZnq6urn59ZNTU2WlpZCQkIzAGYAAIAAAAAzAMwAAP8A/////wBVVVX///99stlUAAAAAXRSTlMAQObYZgAAAAFiS0dEFnzRqBkAAAAHdElNRQfiBhoANBn4/QlFAAAAzUlEQVQ4y83S0Q6DIAwFUGmhYudEdP7/r+6CZEEnvm438emetBDpun+KQW5rQpibtXWOHJHlPedeRHqHQHhm+zXKyKCqMmRhfV53IEb0YUh1EBCIMRH7PIAphEREipgJX71iijER16tAGJ79EShAJrZ3gu4KLMuaCDtqgHVZkwnXAGdYVskzqD3hhRE3IKYV7QkhxHyKBvCDUiKxnsAV2NhrIR9Q9cgGgv8QkAKOfU0KOPeFpGe1g8uHVUgb7MTjAk2QyTjO7T6T2/oHeQPSrw8Qg6bkoQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yNlQwMDo1MjoyNS0wNDowMOXPqxAAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjZUMDA6NTI6MjUtMDQ6MDCUkhOsAAAAAElFTkSuQmCC"
-                    style="margin: 0 0.5rem 0 0"
-                    alt=""
-                  />
-                  Shutdown</label
-                >
-              </li>
             </ul>
           </div>
         </div>
       </div>
-      <div id="clock">
-        <span id="footerTime"></span>
-      </div>
+      <section id="time-options">
+        <div id="clock">
+          <span id="footerTime"></span>
+        </div>
+      </section>
     </div>
   </footer>
 </html>

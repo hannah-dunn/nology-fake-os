@@ -2,7 +2,6 @@
 
 ## this is here temporarily probably
 
-
 ## Overview
 
 The goal of this project is to have students explore and consolidate their understandings of HTML, CSS and JavaScript.

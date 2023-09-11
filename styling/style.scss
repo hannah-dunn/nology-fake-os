@@ -22,6 +22,8 @@ body {
   box-shadow: 0 -2px #fffdfc, 0 -4px #cce9eb;
 }
 
+//for the windows if can get to work
+
 #all-windows {
   position: absolute;
   top: 0;
@@ -38,6 +40,33 @@ body {
   display: none;
 }
 
+// .dropup {
+//   position: relative;
+//   display: inline-block;
+// }
+
+// .dropup-content {
+//   display: none;
+//   position: absolute;
+//   bottom: 50px;
+//   background-color: #f1f1f1;
+//   min-width: 160px;
+//   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+//   z-index: 1;
+// }
+
+// .dropup {
+//   position: fixed;
+//   z-index: 100; // big value if needed
+//   top: 100vh; // hide dropdown
+//   left: 0;
+//   transition: all 200ms ease-out; // or whatever else
+// }
+// .dropup.active {
+//   transform: translate(0, -100%); // dropdown come up
+// }
+
+/////
 #start-menu {
   bottom: 3.75rem;
   position: absolute;
@@ -102,6 +131,7 @@ body {
   box-shadow: -8px 0 #0c1b98, 8px 0 #0c1b98;
 }
 
+//  START BAR
 #start-button {
   min-width: 104px;
   width: 6.5rem;
@@ -119,16 +149,13 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-#time-options:after {
-  content: "5:05 PM";
-}
 #start-button:active {
   box-shadow: -2px -2px #818181, -2px 0 #818181, 0 -2px #818181, -4px -4px black,
     -4px 0 black, 0 -4px black, 2px 2px #e0dede, 0 2px #e0dede, 2px 0 #e0dede,
     2px -2px #818181, -2px 2px #e0dede, -4px 2px black, -4px 4px white,
     4px 4px white, 4px 0 white, 0 4px white, 2px -4px black, 4px -4px white;
 }
+
 label {
   display: block;
 }
@@ -140,6 +167,8 @@ label {
 #start-button-input:checked ~ #start-menu {
   display: block;
 }
+
+// DESKTOP AND SPACING OF ICONS
 
 #desktop {
   position: absolute;
@@ -189,7 +218,9 @@ a.desktop-item {
   background: #005959;
 }
 
-.window {
+//inside the apps!!???
+
+.modal {
   background: #b9b9b9;
   margin: 0.5rem;
   margin-top: -5rem;
@@ -200,137 +231,13 @@ a.desktop-item {
   width: 20rem;
   height: 21rem;
 }
-.window.ie {
-  width: 60%;
-  min-width: 60%;
-  left: 10%;
-  margin-top: 0;
-  position: absolute;
-  top: 5rem;
-  height: 20rem;
-  min-height: 20rem;
-}
-.window.notepad {
-  width: 40%;
-  min-width: 40%;
-  left: 34%;
-  margin-top: 0;
-  position: absolute;
-  top: 7rem;
-  height: 20rem;
-  min-height: 20rem;
-}
-.window.trash {
-  width: 50%;
-  min-width: 50%;
-  left: 30%;
-  margin-top: 0;
-  position: absolute;
-  top: 9rem;
-  height: 20rem;
-  min-height: 20rem;
-}
-.window.documents {
-  width: 50%;
-  min-width: 50%;
-  left: 40%;
-  margin-top: 0;
-  position: absolute;
-  top: 14rem;
-  height: 20rem;
-  min-height: 20rem;
-}
-.window .header {
+.header {
   background: linear-gradient(90deg, #000b7c, #377cc6);
   color: white;
   padding: 0.25rem;
 }
-.window-content {
-  padding: 0.5rem;
-}
 
-#start-button-items {
-  display: flex;
-  width: calc(100% - 4rem);
-}
-#items {
-  margin: 0 0 0 1rem;
-  padding: 0 0 0 2rem;
-  display: flex;
-  overflow: hidden;
-  padding: 4px 0 0 2rem;
-  position: relative;
-  position: relative;
-  top: -3px;
-  height: calc(100% + -1px);
-}
-
-.update .content {
-  margin: 1rem;
-  width: calc(100% - 2rem);
-}
-
-#items > label {
-  height: calc(100% - 4px);
-  display: flex;
-  width: 10.5rem;
-  align-items: center;
-  cursor: pointer;
-  display: none;
-  box-sizing: border-box;
-  margin: 0 1rem 0 0;
-  font-weight: 600;
-  padding: 0 0.5rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-#items > label span {
-  display: block;
-  overflow: hidden;
-  min-width: 2rem;
-  text-overflow: ellipsis;
-}
-
-.file {
-  cursor: pointer;
-  margin: 0 1rem 0 0;
-  text-align: center;
-  width: 6rem;
-}
-
-.file .image {
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin: 0 0 1rem 0;
-}
-.file .text {
-  word-break: break-all;
-  padding: 2px;
-}
-
-#windows-11:checked ~ .windows-11 .text,
-#macos:checked ~ .macos .text,
-#itunes:checked ~ .itunes .text,
-#secret-codes:checked ~ .secret-codes .text,
-#diary:checked ~ .diary .text {
-  background: #000a7c;
-  color: white;
-}
-#items > label:active {
-  box-shadow: -2px -2px #818181, -2px 0 #818181, 0 -2px #818181, -4px -4px black,
-    -4px 0 black, 0 -4px black, 2px 2px #e0dede, 0 2px #e0dede, 2px 0 #e0dede,
-    2px -2px #818181, -2px 2px #e0dede, -4px 2px black, -4px 4px white,
-    4px 4px white, 4px 0 white, 0 4px white, 2px -4px black, 4px -4px white;
-}
-
-#items > label img {
-  width: 1.75rem;
-  padding: 0 0.5rem 0 0;
-}
-
+// in notepad???
 textarea {
   width: 100%;
   position: relative;
@@ -353,132 +260,7 @@ textarea:focus {
   margin-top: 2px;
 }
 
-#background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-}
-
-.programs {
-  position: relative;
-}
-#start-bar .programs > ul {
-  display: none;
-  position: absolute;
-  top: 4rem;
-  left: calc(100% - 6px);
-  background: silver;
-  list-style: none;
-  padding: none;
-  margin: 0;
-}
-.programs > ul label:after,
-.programs > ul label:before {
-  display: none;
-}
-
-#start-menu .programs ul img {
-  width: 1rem;
-  margin: 0 0.5rem 0 0;
-}
-#start-menu .programs ul label {
-  margin: 0;
-  width: 100%;
-  padding: 0;
-  height: auto;
-  padding: 0.5rem;
-  width: 14rem;
-}
-#start-bar .programs:hover > ul {
-  display: block;
-}
-#start-menu .programs ul li label:hover {
-  box-shadow: none;
-}
-
-#shutdown-screen [for="shutdown-screen-input"] {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: 50% auto;
-  cursor: pointer;
-  z-index: 99999999999;
-  background-repeat: no-repeat;
-  background-color: black;
-  background-position: 50% 50%;
-}
-.tab-box {
-  min-width: 30%;
-}
-.tab-header {
-  box-shadow: -2px -2px #e0dede, -2px 0 #e0dede, 0 -2px #e0dede, -4px 0 white,
-    0 -4px white, 2px 0 #818181, 2px -2px #818181, 4px 0 black;
-  float: left;
-  padding: 0.25rem;
-}
-.tab-box img {
-  width: 1rem;
-  float: left;
-  padding: 0 0.25rem 1rem 0;
-}
-.tab-box .box {
-  width: 100%;
-  background: white;
-  float: left;
-  border: 2px inset;
-  padding: 0;
-  position: relative;
-  left: -4px;
-  list-style: none;
-  margin: 0;
-}
-
-.tab-box .box label {
-  padding: 0.25rem;
-  box-sizing: border-box;
-  cursor: pointer;
-  width: 100%;
-  float: left;
-}
-
-.tab-box-content .content > div {
-  display: none;
-}
-
-h2 {
-  margin: 0;
-}
-.tab-box-content .content > div {
-  padding: 1rem;
-  box-sizing: border-box;
-}
-
-.hidden {
-  display: none;
-}
-
 // sound
-
-#modalContainer {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-}
-
-#modal {
-  display: none;
-  width: 50px;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  border: 1px solid;
-  border-radius: 4px;
-  z-index: 1000;
-}
 
 #trigger {
   float: right;

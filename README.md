@@ -5,7 +5,6 @@ Here is a recreation of a Windows 98 desktop.
 - Internet Explorer - image of / playing youtube video
 - My Little Pony: Friendship Gardens - slideshow modal of images
 - Notepad - textarea
-- Recycle Bin - discarded icons
 
 ## Full Overview
 

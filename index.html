@@ -10,212 +10,126 @@
   </head>
   <body class="body">
     <div id="desktop">
-      <!--  -->
       <!-- internet explorer -->
-      <label for="windows-ie-input" class="desktop-item btn-open">
-        <div class="icon">
+      <label for="windows-ie-input" class="desktop-item">
+        <div class="icon" id="openInternetModalBtn">
           <img src="./assets/internet.png" alt="" />
         </div>
-        <div class="text">Internet Explorer</div>
-      </label>
-      <section class="modal hidden">
-        <div id="" class="flex">
+        <div class="text">Internet Explorer</div></label
+      >
+      <div id="internetModal" class="modal">
+        <div class="modal-content">
           <div class="header">
-            <button class="btn-close close">⨉</button>
+            <span class="close" id="closeInternetModalBtn">X</span>
+            <h2>Internet Explorer</h2>
           </div>
-          <div><h2>dummy text</h2></div>
+          <div>
+            <iframe
+              width="300"
+              height="200"
+              src="https://www.youtube.com/embed/5STL7iVpW6Q"
+              title="My Little Pony Friendship Gardens - Main Theme"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
-      </section>
+      </div>
+      <!-- end of internet explorer -->
 
-      <!-- inside the icons -- internet -->
-      <!-- <div id="all-windows">
-        <div class="window ie windows-box-shadow">
-          <div class="header">
-            <label for="windows-ie-input-on-top">FJOLT</label>
-            <div class="header-buttons">
-              <label
-                for="windows-ie-input-min"
-                class="minimize windows-box-shadow"
-              ></label>
-              <label
-                for="windows-ie-input-max"
-                class="maximize windows-box-shadow"
-              ></label>
-              <label for="windows-ie-input" class="close windows-box-shadow"
-                >X</label
-              >
-            </div>
-          </div>
-        </div> -->
-
-      <!-- my little pony -->
+      <!-- pony game -->
       <label for="windows-documents-input" class="desktop-item">
-        <div class="icon">
+        <div class="icon" id="openPonyModalBtn">
           <img src="./assets/pony icon.jpg" alt="" />
         </div>
         <div class="text">My Little Pony: Friendship Gardens</div>
       </label>
 
-      <div class="slideshow-container">
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img
-            src="./assets/My_Little_Pony_Friendship_Gardens_Gameplay_Win-1.jpg"
-            style="width: 50%"
-          />
-          <div class="text">Caption Text</div>
-        </div>
+      <div id="ponyModal" class="modal">
+        <div class="modal-content">
+          <div class="header">
+            <span class="close" id="closePonyModalBtn">&times;</span>
+            <h2>My Little Pony: Friendship Garden</h2>
+          </div>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img
+                src="./assets/My_Little_Pony_Friendship_Gardens_Gameplay_Win-10.jpg"
+                style="width: 100%"
+              />
+              <div class="text">Game menu</div>
+            </div>
 
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img
-            src="./assets/My_Little_Pony_Friendship_Gardens_Gameplay_Win-10.jpg"
-            style="width: 50%"
-          />
-          <div class="text">Caption Two</div>
-        </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img
+                src="./assets/My_Little_Pony_Friendship_Gardens_Gameplay_Win-3.jpg"
+                style="width: 100%"
+              />
+              <div class="text">Make a Pony</div>
+            </div>
 
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img
-            src="./assets/My_Little_Pony_Friendship_Gardens_Gameplay_Win-2.jpg"
-            style="width: 50%"
-          />
-          <div class="text">Caption Three</div>
-        </div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img
+                src="./assets/My_Little_Pony_Friendship_Gardens_Gameplay_Win-8.jpg"
+                style="width: 100%"
+              />
+              <div class="text">My Little Pony</div>
+            </div>
 
-        <!-- Next and previous buttons -->
-        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+
+          <!-- The dots/circles -->
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
       </div>
+
       <br />
 
-      <!-- notepad -->
-      <label for="windows-notepad-input" class="desktop-item btn-open">
-        <div class="icon">
+      <!-- notepad-->
+
+      <label for="windows-ie-input" class="desktop-item">
+        <div class="icon" id="openNotepadModalBtn">
           <img
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAUVBMVEUAAACGhoYAgID4+Phm//+ZzMyZ///AwMAAAADM///x8fHM7P/q6upmzMymyvDM/8zd3d2Z/8zj4+MzmZnMzMxmzP9m/8wzzMwzzP/X19f///8yWdUJAAAAAXRSTlMAQObYZgAAAAFiS0dEGnVn5DIAAAAHdElNRQfiBhoALTAhTzgxAAABUklEQVQ4y5WT27aCMAxEJZByqYkFqR7//0fPpKUW0BeH4svsziQuvVx+UNOcz1HU0ukcEerYuf2hnobhEJA1TuPkPc5Vhr6pBLlst5MRo/de6RMwG5evsG8jAnZA9s22yze8jICwB8ZpKEL8rBawvAFyk7fZsmbdAvaArwHqsaUM97tIAVBQbjtdHApshb5dKpAGm+Hgg9WxTRDeAPybpma7i69RHaUGqYAf0axshzkHrG1JICtNT0ai2gpoqIBXh2iGLSodP2wFa8gVhKVSgOPIHYgYLaBvSwK5tJcKdyAk4qL5oQA2AaslR4ZpPpUG2QCNjzibm/yYAqwhJWCCjlmzkxih0rABSH5s2SLP+Ewr5AarIOYt2N4/eVrAmhu2Ic9KE4QKXIaT7rVBmv3PulnCC1rXF552l7ADlhDCy7D2GwDirP4I4N941tH/nPfsf9M/lngcOlIX3Z0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDYtMjZUMDA6NDU6NDgtMDQ6MDBhJQfuAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA2LTI2VDAwOjQ1OjQ4LTA0OjAwEHi/UgAAAABJRU5ErkJggg=="
             alt=""
           />
         </div>
-        <div class="text">Notepad</div>
-      </label>
-      <!-- 
-      <section class="modal hidden">
-        <div id="windows-box-shadow modal ie" class="flex">
+        <div class="text">Notepad</div></label
+      >
+
+      <div id="notepadModal" class="modal">
+        <div class="modal-content">
           <div class="header">
-            <button class="btn-close close">⨉</button>
+            <span class="close" id="closeNotepadModalBtn">X</span>
+            <h2>Notepad</h2>
           </div>
           <div>
             <textarea
-              name="textarea"
-              id="textarea"
+              name="notepadArea"
+              id=""
               cols="30"
               rows="10"
+              placeholder="Here is a notepad to write things."
             ></textarea>
           </div>
         </div>
-      </section> -->
-      <!-- modal work ^^ -->
-      <!-- <div class="window notepad windows-box-shadow">
-        <div class="header">
-          <label for="windows-notepad-input-on-top">Notepad</label>
-          <div class="header-buttons">
-            <label
-              for="windows-notepad-input-min"
-              class="minimize windows-box-shadow"
-            ></label>
-            <label
-              for="windows-notepad-input-max"
-              class="maximize windows-box-shadow"
-            ></label>
-            <label for="windows-notepad-input" class="close windows-box-shadow"
-              >X</label
-            >
-          </div>
-        </div>
-        <div class="options line">
-          <div class="item">File</div>
-          <div class="item">Edit</div>
-          <div class="item">Search</div>
-        </div>
-        <div class="content">
-          <textarea></textarea>
-        </div>
-      </div> -->
-
-      <!-- recycle bin -->
-      <label for="windows-trash-input" class="desktop-item">
-        <div class="icon">
-          <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAElBMVEUAAACAgIAAAADAwMD///8AgABI7wriAAAAAXRSTlMAQObYZgAAAAFiS0dEBI9o2VEAAAAHdElNRQfiBhoAMQTmjJHZAAABTElEQVQ4y3XU4Y2DMAwF4PQmqEn432MDyzAAlyxQiey/yvkZQkNCUZGq98WxCVWds4uInuS660HTQCTPNqdhUpgTP7Xusnz6Jc0Tk96nPHQ5UdA8sd6RC4S/XwrrCvAJWsDPyc8nUIqljRdJUYI3WGOI/mijIFrEaD6viaMXpgIo0hKWoDshwHY7aJHMgCSEdR9AEe/z6ld6VYBOmE18IsBDPpeOp6B5C+hkeQcaW34C51zE8sHtMIss7zt4R5Hsl9jCkiNKDLi0wIPkHKBjC0vOm0Y5dxWMjCsYXIFx0wIDuoKt/QbNY2DeAr7AqwGO9VB4wgOW0ML4DXizfQoMrgBK8An1UPbWedMBMEMLEsZMOLEO9HDtSKre5QdkR8wXoH1WvMYr/OzSg5tMlh4OkWaoWjoo0sMhTYtTrPfU/j+o8F0O4dsccp+rVPk/RsOIrdrb4ToAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDYtMjZUMDA6NDk6MDQtMDQ6MDA484PuAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA2LTI2VDAwOjQ5OjA0LTA0OjAwSa47UgAAAABJRU5ErkJggg=="
-            alt=""
-          />
-        </div>
-        <div class="text">Recycle Bin</div>
-      </label>
-    </div>
-
-    <!-- inside the icons do literally nothing recycle bin -->
-    <!-- <div class="window trash windows-box-shadow">
-        <div class="header">
-          <label for="windows-trash-input-on-top">Recycle Bin</label>
-          <div class="header-buttons">
-            <label
-              for="windows-trash-input-min"
-              class="minimize windows-box-shadow"
-            ></label>
-            <label
-              for="windows-trash-input-max"
-              class="maximize windows-box-shadow"
-            ></label>
-            <label for="windows-trash-input" class="close windows-box-shadow"
-              >X</label
-            >
-          </div>
-        </div>
-        <div class="options line">
-          <div class="item">File</div>
-          <div class="item">Edit</div>
-          <div class="item">Views</div>
-          <div class="item">Go</div>
-          <div class="item">Favourites</div>
-          <div class="item">Help</div>
-        </div>
-        <div class="content white">
-          <input type="radio" name="trash-radio" id="windows-11" />
-          <input type="radio" name="trash-radio" id="macos" />
-          <input type="radio" name="trash-radio" id="itunes" />
-          <label class="file windows-11" for="windows-11">
-            <span class="image"
-              ><img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAALVBMVEUAAAAAAACAAAD/AAAA/wAAgACAgIAAAIAAAP///wCAgAAAgIDAwMAA//////9JSTaIAAAAAXRSTlMAQObYZgAAAAFiS0dEDm+9ME8AAAAHdElNRQfiBhoANyn1CWoqAAABtUlEQVQ4y7WTsWrjQBRFRxgFlXohwpu/CKsvMGg6syCYhw0rQqrUq0LMlHERZkBVyi1TpkwRmA9Q2nSBfIDrfEPejGRrlLW3Su4DC97hzuVKHsa+QRGQju1DEg3Pfg9pAPxEcJrDGZ9YgEFEkxMoFhMQHQHpYTAbYg4APweOmuUsn+X/AT+pRbaA66s9uJh5MIhz3Dd3IQQUnN8DCFzJaXNl4PzvPSAq9WfS3DhwB7hq9WbSfAesVTINmw+gbbXWNe2TXfMBWPukpLMk/QQOsZKNOysxzCRmdDxx1YgyBDXAwx2sxUpXSw9uEg8GLRrVdF3pm7sQB9oN/cy1bpacp2NzWL/ZRwCzbkQnMB2b43Pbkuf2uSJDD9ycvL68U2lrq6IjQ5nump9U2y3/3RpzuySDd/TN45dfBbfGGkMJvaNXvN0WHI0x2kdkI3gvCk/UJwe7LAparI1GFxH8JwQdRRuj8IwM5QgqMghErTcbxNARc6cfipSFESzunIPeFH2/LAsAq1yEczSynly5mBLAGcRchgbGEEuXIHFeT69n7BOkrD8Z6H7KXv9eapjTuj522VP21foAO1apyR+rjO8AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDYtMjZUMDA6NTU6NDEtMDQ6MDA1M539AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA2LTI2VDAwOjU1OjQxLTA0OjAwRG4lQQAAAABJRU5ErkJggg=="
-                alt=""
-            /></span>
-            <span class="text">Windows_11.exe</span>
-          </label>
-          <label class="file macos" for="macos">
-            <span class="image"
-              ><img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGFBMVEUAAACAgAAAAADAwMD//wD///+AgIAA//95HUQQAAAAAXRSTlMAQObYZgAAAAFiS0dEBfhv6ccAAAAHdElNRQfiBhoANRSfV0S5AAAA50lEQVQ4y7XSsQ7CIBAGYFy618HZYKp7MezGR2hsV0MDb6B9fQsc1/YOHEz8lyb9ctxxQQghapa98NldWQDuNDeAB01dqqhNocfBFCpchIr1+B+4FEvAwrdvKKgYzaCVPucMTD7vFWhsO2xhaUsB21JIbS8TBWjL4TX8CGc/c67HiawEIQwnM9CEe5rCUWoFsCwPUq4hrYRWGAkJ4zqEHl+BgZ0l6OAoZeL2Cfi2ATSApRUjAr6oDcxvIQ0lw827BbbplfsKlS3AqGjGOK5jARAVKylCGjdzVrw576+PBWjjfz7Yc/75AfUZE8mcao/xAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA2LTI2VDAwOjUzOjIwLTA0OjAwWDXviQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNi0yNlQwMDo1MzoyMC0wNDowMCloVzUAAAAASUVORK5CYII="
-                alt=""
-            /></span>
-            <span class="text">Mac_OS.exe</span>
-          </label>
-          <label class="file itunes" for="itunes">
-            <span class="image"
-              ><img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAM1BMVEUAAAAzMzPd3d1fX1/AwMDX19f/zJnMmcyGhoZ/f3//zMyZ/8x3d3dmZmaysrKWlpb////dU6LHAAAAAXRSTlMAQObYZgAAAAFiS0dEEJWyDSwAAAAHdElNRQfiBBMBIhiVaPrZAAABaUlEQVRIx73V7a6DIAyAYSkIgpPd/92urXwNqo7k5PQne584wGXLkkepZW6UmiRKTRKlJolSkwTDOcHdNJg5rNL9D4A0V7HGaQCAoVmtBbeJvdl02Su0wDq3bUIPOh8Oth0QiPY6Hz+VBCAB6l0IndDlgrkTQCd06cHj9CCEQdT+3L1pAff7LpwWGJ92X0B+wI6jJZB2b06x2qYfASZ59w3IuSAqoLiClOOnQ08nqviMwPB51Z4vUo8gDR0vUe9Dze+A8fnH6mveAblH0a7rO/Dy/vgVcP/CxV7cAU+L8U9BqEPgwLX3+yeQHnHEyH2kuQa0vO/Nsb5jne+LSDXm+IrWizMNkG6acxLp1cClO5Bz5yy/fOc3vwAL1NwFC2WnRfS/B++a/gsYGVQRemDEvgGWQSdGkAX1aweM1CcR+AFrB8SeBff8jeJzT6IB8blH4Uegb/qF/o3SnhN4yE+iIb+fP+TZ8IyffABZtRpvqw6ULQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNC0xOVQwMTozNDoyNC0wNDowMNJB+WoAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDQtMTlUMDE6MzQ6MjQtMDQ6MDCjHEHWAAAAAElFTkSuQmCC"
-                alt=""
-            /></span>
-            <span class="text">itunes.exe</span>
-          </label>
-        </div>
       </div>
-      
-    </div> -->
+      <!-- end of notepad -->
+    </div>
   </body>
+
   <footer>
     <!-- start button -->
     <div id="start-bar">
@@ -235,7 +149,7 @@
           </button>
         </div>
 
-        <!-- in the dropup -->
+        <!-- in the dropup there are meant to pop up when you press the start button!!!!!!!!!!!-->
         <div id="items" class="dropup-content">
           <label
             for="windows-ie-input-min"

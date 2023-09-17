@@ -1,63 +1,61 @@
-//modals
+// internet
+const internetModal = document.getElementById("internetModal");
+const openInternetModalBtn = document.getElementById("openInternetModalBtn");
+const closeInternetModalBtn = document.getElementById("closeInternetModalBtn");
 
-const modal = document.querySelector(".modal");
-const openModalBtn = document.querySelector(".btn-open");
-const closeModalBtn = document.querySelector(".btn-close");
+openInternetModalBtn.addEventListener("click", () => {
+  internetModal.style.display = "block";
+});
 
-const openModal = function () {
-  modal.classList.remove("hidden");
-};
+closeInternetModalBtn.addEventListener("click", () => {
+  internetModal.style.display = "none";
+});
 
-openModalBtn.addEventListener("click", openModal);
-
-const closeModal = function () {
-  modal.classList.add("hidden");
-};
-
-closeModalBtn.addEventListener("click", closeModal);
-
-// live time!
-const today = new Date();
-document.getElementById("footerTime").innerHTML =
-  today.getHours() + ":" + today.getMinutes();
-
-// trying to get music to play!!!!!
-
-const $ = document;
-$.get = $.getElementById;
-const log = console.log;
-const warn = console.warn;
-const error = console.error;
-
-const trigger = $.get("trigger");
-
-trigger.addEventListener("click", function () {
-  if (trigger.getAttribute("data-is-open") == "false") {
-    trigger.setAttribute("data-is-open", "true");
-    $.get("modal").style.display = "block";
-    trigger.innerHTML = "close";
-    playSound("https://www.youtube.com/watch?app=desktop&v=5STL7iVpW6Q");
-  } else {
-    $.get("modal").style.display = "none";
-    trigger.innerHTML = "reopen";
-    trigger.setAttribute("data-is-open", "false");
+window.addEventListener("click", (event) => {
+  if (event.target == internetModal) {
+    internetModal.style.display = "none";
   }
 });
 
-function playSound(url) {
-  const audio = document.createElement("audio");
-  audio.src = url;
-  // Your audio settings
-  audio.play();
-}
+// notepad
+const notepadModal = document.getElementById("notepadModal");
+const openNotepadModalBtn = document.getElementById("openNotepadModalBtn");
+const closeNotepadModalBtn = document.getElementById("closeNotepadModalBtn");
 
-// DROPUP??
+openNotepadModalBtn.addEventListener("click", () => {
+  notepadModal.style.display = "block";
+});
 
-// $(".dropbtn").click(() => {
-//   $(".dropup").toggleClass("active"); // dropdown switch state each time you click
-// });
+closeNotepadModalBtn.addEventListener("click", () => {
+  notepadModal.style.display = "none";
+});
 
-// MODAL SLIDESHOW
+window.addEventListener("click", (event) => {
+  if (event.target == notepadModal) {
+    notepadModal.style.display = "none";
+  }
+});
+
+// pony
+const ponyModal = document.getElementById("ponyModal");
+const openPonyModalBtn = document.getElementById("openPonyModalBtn");
+const closePonyModalBtn = document.getElementById("closePonyModalBtn");
+
+openPonyModalBtn.addEventListener("click", () => {
+  ponyModal.style.display = "block";
+});
+
+closePonyModalBtn.addEventListener("click", () => {
+  ponyModal.style.display = "none";
+});
+
+window.addEventListener("click", (event) => {
+  if (event.target == ponyModal) {
+    ponyModal.style.display = "none";
+  }
+});
+
+// slideshow
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -75,6 +73,7 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -90,3 +89,43 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+//modals broken :(
+
+// const notepadModal = document.getElementById("notepad");
+// const explorerModal = document.getElementById("explorer");
+// const poniesModal = document.getElementById("ponies");
+// const closeModalBtns = document.querySelectorAll(".btn-close");
+
+// const openModal = function (modal) {
+//   modal.classList.remove("hidden");
+// };
+
+// const openModalBtns = document.querySelectorAll(".btn-open");
+// openModalBtns.forEach((icon) => {
+//   icon.addEventListener("click", function () {
+//     if (icon.classList.contains("notepad")) {
+//       openModal(notepadModal);
+//     } else if (icon.classList.contains("explorer")) {
+//       openModal(explorerModal);
+//     } else if (icon.classList.contains("ponies")) {
+//       openModal(poniesModal);
+//     }
+//   });
+// });
+
+// const closeModal = function () {
+//   const modal = this.closest(".modal");
+//   if (modal) {
+//     modal.classList.add("hidden");
+//   }
+// };
+
+// closeModalBtns.forEach((btn) => {
+//   btn.addEventListener("click", closeModal);
+// });
+
+// live time!
+const today = new Date();
+document.getElementById("footerTime").innerHTML =
+  today.getHours() + ":" + today.getMinutes();

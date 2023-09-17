@@ -1,3 +1,22 @@
+// startmenu
+const startModal = document.getElementById("startModal");
+const openStartModalBtn = document.getElementById("openStartModalBtn");
+const closeStartModalBtn = document.getElementById("closeStartModalBtn");
+
+openStartModalBtn.addEventListener("click", () => {
+  startModal.style.display = "block";
+});
+
+closeStartModalBtn.addEventListener("click", () => {
+  startModal.style.display = "none";
+});
+
+window.addEventListener("click", (event) => {
+  if (event.target == startModal) {
+    startModal.style.display = "none";
+  }
+});
+
 // internet
 const internetModal = document.getElementById("internetModal");
 const openInternetModalBtn = document.getElementById("openInternetModalBtn");

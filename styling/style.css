@@ -154,6 +154,17 @@ a.desktop-item {
   padding: 0.25rem;
 }
 
+#startModal {
+  display: none;
+  background: #b9b9b9;
+  margin-bottom: 1px;
+  margin-left: 1px;
+  width: 300px;
+  height: 600px;
+  bottom: 0;
+  position: fixed;
+}
+
 textarea {
   width: 100%;
   position: relative;

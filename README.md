@@ -6,6 +6,8 @@ Here is a recreation of a Windows 98 desktop.
 - My Little Pony: Friendship Gardens - slideshow modal of images
 - Notepad - textarea
 
+https://hannah-dunn.github.io/nology-fake-os/
+
 ## Full Overview
 
 The goal of this project is to have students explore and consolidate their understandings of HTML, CSS and JavaScript.
